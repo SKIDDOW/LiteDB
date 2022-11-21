@@ -24,12 +24,12 @@ using (var db = new LiteDatabase(@"MyData.db"))
     //col.EnsureIndex(x => x.Name, true);
 
     // Insert new customer document (Id will be auto-incremented)
-    col.Insert(customer);
+    //col.Insert(customer);
 
     // Update a document inside a collection
-    //customer.Name = "Joana Doe";
+    customer.Name = "Joana Doe";
 
-    //col.Update(customer);
+    col.Update(customer);
 
     // Use LINQ to query documents (with no index)
     var results = col.Find(x => x.Age > 20);
