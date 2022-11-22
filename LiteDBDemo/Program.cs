@@ -27,10 +27,10 @@ using (var db = new LiteDatabase(@"MyData.db"))
     //col.Insert(customer);
 
     // Update a document inside a collection
-    customer.Name = "Joana Doe";
+    //customer.Name = "Joana Doe";
 
-    col.Update(customer);
+    //col.Update(customer);
 
-    // Use LINQ to query documents (with no index)
+    //// Use LINQ to query documents (with no index)
     var results = col.Find(x => x.Age > 20);
 }

@@ -8,5 +8,4 @@ public class Customer
     public int Age { get; set; }
     public string[] Phones { get; set; }
     public bool IsActive { get; set; }
-    public ObjectId _objectId { get; set; }
 }
